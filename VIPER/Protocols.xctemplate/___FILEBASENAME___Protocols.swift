@@ -12,18 +12,18 @@ protocol ___VARIABLE_sceneName___PresenterToViewProtocol: class{
     func showSomething(argument: ___VARIABLE_sceneName___Model)
 }
 
-protocol ___VARIABLE_sceneName___InterectorToPresenterProtocol: class{
+protocol ___VARIABLE_sceneName___InteractorToPresenterProtocol: class{
     func somethingFetched(argument: ___VARIABLE_sceneName___Model)
 }
 
-protocol ___VARIABLE_sceneName___PresentorToInterectorProtocol: class{
-    var presenter: ___VARIABLE_sceneName___InterectorToPresenterProtocol? {get set}
+protocol ___VARIABLE_sceneName___PresenterToInteractorProtocol: class{
+    var presenter: ___VARIABLE_sceneName___InteractorToPresenterProtocol? {get set}
     func fetchSomething()
 }
 
 protocol ___VARIABLE_sceneName___ViewToPresenterProtocol: class{
     var view: ___VARIABLE_sceneName___PresenterToViewProtocol? {get set}
-    var interector: ___VARIABLE_sceneName___PresentorToInterectorProtocol? {get set}
+    var interactor: ___VARIABLE_sceneName___PresenterToInteractorProtocol? {get set}
     var router: ___VARIABLE_sceneName___PresenterToRouterProtocol? {get set}
     func updateView()
 }

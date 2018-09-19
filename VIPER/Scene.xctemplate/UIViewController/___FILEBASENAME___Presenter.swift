@@ -11,15 +11,15 @@ import UIKit
 class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___ViewToPresenterProtocol {
     
     var view: ___VARIABLE_sceneName___PresenterToViewProtocol?
-    var interector: ___VARIABLE_sceneName___PresentorToInterectorProtocol?
+    var interactor: ___VARIABLE_sceneName___PresenterToInteractorProtocol?
     var router: ___VARIABLE_sceneName___PresenterToRouterProtocol?
     
     func updateView() {
-        interector?.fetchSomething()
+        interactor?.fetchSomething()
     }
 }
 
-extension ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___InterectorToPresenterProtocol {
+extension ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___InteractorToPresenterProtocol {
     
     func somethingFetched(argument: ___VARIABLE_sceneName___Model) {
         view?.showSomething(argument: argument)

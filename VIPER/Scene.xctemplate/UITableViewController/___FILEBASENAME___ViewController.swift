@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ___VARIABLE_sceneName___ViewController: UITableViewController {
+class ___VARIABLE_sceneName___ViewController: UICollectionViewController {
     
     var presenter: ___VARIABLE_sceneName___ViewToPresenterProtocol?
     

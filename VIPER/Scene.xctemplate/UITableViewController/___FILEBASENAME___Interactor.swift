@@ -12,9 +12,9 @@
 
 import UIKit
 
-class ___VARIABLE_sceneName___Interector: ___VARIABLE_sceneName___PresentorToInterectorProtocol{
+class ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___PresenterToInteractorProtocol{
     
-    var presenter: ___VARIABLE_sceneName___InterectorToPresenterProtocol?
+    var presenter: ___VARIABLE_sceneName___InteractorToPresenterProtocol?
     
     func fetchSomething() {
     }
