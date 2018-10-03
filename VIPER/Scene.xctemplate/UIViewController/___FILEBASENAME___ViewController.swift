@@ -8,13 +8,9 @@
 
 import UIKit
 
-class ___VARIABLE_sceneName___ViewController: UICollectionViewController {
+class ___VARIABLE_sceneName___ViewController: UIViewController {
     
     var presenter: ___VARIABLE_sceneName___ViewToPresenterProtocol?
-    
-    required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)!
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

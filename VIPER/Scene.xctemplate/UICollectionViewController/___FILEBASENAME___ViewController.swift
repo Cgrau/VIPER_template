@@ -12,10 +12,6 @@ class ___VARIABLE_sceneName___ViewController: UICollectionViewController {
     
     var presenter: ___VARIABLE_sceneName___ViewToPresenterProtocol?
     
-    required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)!
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.updateView()
