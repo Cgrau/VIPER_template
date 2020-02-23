@@ -1,4 +1,4 @@
-Xcode VIPER template with Swift 4.2
+Xcode VIPER template with Swift 5
 
 To install the VIPER template Xcode templates, run:
 
