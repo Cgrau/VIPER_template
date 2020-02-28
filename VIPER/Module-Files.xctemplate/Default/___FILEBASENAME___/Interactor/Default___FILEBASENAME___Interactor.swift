@@ -18,7 +18,7 @@ protocol ___VARIABLE_sceneName___InteractorDelegate: class {
 
 class Default___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___Interactor{
   
-  var delegate: ___VARIABLE_sceneName___InteractorDelegate?
+  weak var delegate: ___VARIABLE_sceneName___InteractorDelegate?
   
   func fetchSomething() {
     delegate?.somethingFetched()
