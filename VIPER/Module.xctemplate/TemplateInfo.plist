@@ -16,7 +16,7 @@
 			<key>Identifier</key>
 			<string>sceneName</string>
 			<key>Name</key>
-			<string>New Scene Name:</string>
+			<string>New Module Name:</string>
 			<key>NotPersisted</key>
 			<true/>
 			<key>Required</key>
@@ -78,11 +78,11 @@
 			<key>Default</key>
 			<string>___VARIABLE_sceneName:identifier___Navigator</string>
 			<key>Description</key>
-			<string>The router name</string>
+			<string>The navigator name</string>
 			<key>Identifier</key>
-			<string>routerName</string>
+			<string>navigatorName</string>
 			<key>Name</key>
-			<string>Router Name:</string>
+			<string>Navigator Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
@@ -103,27 +103,24 @@
 			<string>static</string>
 		</dict>
 		<dict>
-			<key>Default</key>
-			<string>All Files</string>
-			<key>Description</key>
-			<string>Options: All Files (without folders), Default(no Assembly) and Assembly</string>
-			<key>FallbackHeader</key>
-			<string>#import &lt;UIKit/UIKit.h&gt;</string>
-			<key>Identifier</key>
-			<string>viewControllerSubclass</string>
-			<key>Name</key>
-			<string>Type:</string>
-			<key>NotPersisted</key>
-			<false/>
-			<key>Required</key>
-			<string>YES</string>
-			<key>Type</key>
-			<string>class</string>
-			<key>Values</key>
-			<array>
-				<string>All Files</string>
-			</array>
-		</dict>
+      <key>Identifier</key>
+      <string>moduleType</string>
+      <key>Required</key>
+      <true/>
+      <key>Name</key>
+      <string>Module type:</string>
+      <key>Description</key>
+      <string>Options: Default(If you don't use AppAssembly) and Using Assembly, </string>
+      <key>Type</key>
+      <string>popup</string>
+      <key>Default</key>
+      <string>Default(NoAssembly)</string>
+      <key>Values</key>
+      <array>
+				<string>Default(NoAssembly)</string>
+        <string>Using Assembly</string>
+      </array>
+    </dict>
 	</array>
 	<key>Platforms</key>
 	<array>

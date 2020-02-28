@@ -1,27 +1,10 @@
-//
-//  ___FILENAME___
-//  ___PROJECTNAME___
-//
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
-//
-
 import UIKit
 
 protocol ___VARIABLE_sceneName___Provider {
   func get___VARIABLE_sceneName___ViewController() -> UIViewController
 }
 
-//////////////////////////////////////////////////////
-//Remove this if you already have an assembly
-class Assembly {
-  static let shared = Assembly()
-}
-
-let assembly = Assembly.shared
-//////////////////////////////////////////////////////
-
-extension Assembly: ___VARIABLE_sceneName___Provider {
+class Default___VARIABLE_sceneName___Provider : ___VARIABLE_sceneName___Provider {
   func get___VARIABLE_sceneName___ViewController() -> UIViewController {
     let viewController = ___VARIABLE_sceneName___ViewController()
     viewController.mainView = mainView

@@ -1,11 +1,3 @@
-//
-//  ___FILENAME___
-//  ___PROJECTNAME___
-//
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
-//
-
 import UIKit
 
 protocol ___VARIABLE_sceneName___InteractorDelegate: class {
@@ -14,7 +6,7 @@ protocol ___VARIABLE_sceneName___InteractorDelegate: class {
 
 class Default___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___Interactor{
   
-  var delegate: ___VARIABLE_sceneName___InteractorDelegate?
+  weak var delegate: ___VARIABLE_sceneName___InteractorDelegate?
   
   func fetchSomething() {
     delegate?.somethingFetched()
